@@ -43,13 +43,9 @@ class JSON2XML
         city[:id] = attrs.fetch('_id')
         city[:name] = attrs.fetch('city')
         city[:state] = attrs.fetch('state')
-        city[:location] = format_coord(attrs.fetch('loc'))
+        city[:location] = attrs.fetch('loc').join(',')
         city[:population] = attrs.fetch('pop').to_s
       end
-    end
-
-    def format_coord(coord)
-      coord.join(',')
     end
 end
 
