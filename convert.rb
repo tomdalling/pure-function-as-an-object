@@ -2,16 +2,16 @@ require 'ox'
 require 'json'
 
 class JSON2XML
-  def self.convert(json_str)
-    new(json_str).send(:xml)
+  def self.convert(input_json)
+    new(input_json).send(:xml)
   end
 
   private
     private_class_method :new
-    attr_reader :json_str
+    attr_reader :input_json
 
-    def initialize(json_str)
-      @json_str = json_str
+    def initialize(input_json)
+      @input_json = input_json
     end
 
     def xml
@@ -33,7 +33,7 @@ class JSON2XML
 
     def city_nodes
       @city_nodes ||=
-        json_str.each_line.map { |line| parse_city_node(line) }
+        input_json.each_line.map { |line| parse_city_node(line) }
     end
 
     def parse_city_node(json)
