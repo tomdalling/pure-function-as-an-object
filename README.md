@@ -5,7 +5,7 @@ This is a tiny project to demonstrate the PFAAO pattern.
 It converts a JSON document to an XML document.
 The original PFAAO article is here:
 
-<http://www.tomdalling.com/blog/ruby/pure-function-as-on-object-PFAAO-pattern/>
+<http://www.tomdalling.com/blog/ruby/pure-function-as-an-object-PFAAO-pattern/>
 
 
 Running The Code
