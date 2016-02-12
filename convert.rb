@@ -36,9 +36,9 @@ class JSON2XML
         input_json.each_line.map { |line| parse_city_node(line) }
     end
 
-    def parse_city_node(json)
+    def parse_city_node(line)
       Ox::Element.new('city').tap do |city|
-        attrs = JSON.parse(json)
+        attrs = JSON.parse(line)
 
         city[:id] = attrs.fetch('_id')
         city[:name] = attrs.fetch('city')
