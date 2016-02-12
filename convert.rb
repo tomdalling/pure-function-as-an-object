@@ -7,6 +7,7 @@ class JSON2XML
   end
 
   private
+    private_class_method :new
     attr_reader :json_str
 
     def initialize(json_str)
