@@ -1,0 +1,13 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ox (2.2.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ox (~> 2.2.4)
+
+BUNDLED WITH
+   1.11.2
