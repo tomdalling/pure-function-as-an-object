@@ -3,9 +3,7 @@ Pure Function As An Object (PFAAO) Pattern Demonstration
 
 This is a tiny project to demonstrate the PFAAO pattern.
 It converts a JSON document to an XML document.
-The original PFAAO article is here:
-
-<http://www.tomdalling.com/blog/ruby/pure-function-as-an-object-PFAAO-pattern/>
+The accompanying article article is available here: <http://www.rubypigeon.com/posts/the-pure-function-as-an-object-pfaao-pattern/>
 
 
 Running The Code
